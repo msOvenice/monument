@@ -2,9 +2,9 @@
 import Column from '@/components/ui/Column'
 import Row from '@/components/ui/Row'
 import Wrapper from '@/components/ui/Wrapper'
-import Logo from '@/components/ui/elements/Logo'
 import SocialItems from '@/components/ui/elements/SocialItems'
 import Form from '@/components/ui/elements/formSmall/Form'
+import LogoSVG from '@/img/Logo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
@@ -30,7 +30,7 @@ const Footer:FC = () => {
       <Wrapper>
         <Row isGrid className={styles.content}>
           <Column size={2}>
-            <Logo logo='images/logoFooter.svg' />
+            <LogoSVG text='#ffffff' icon='#ffffff' />
             <SocialItems />
           </Column>
           <Column size={2}>

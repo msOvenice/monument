@@ -5,7 +5,7 @@ import { FC } from 'react'
 const Logo: FC = () => {
   return (
     <Link href='/' className='flex items-center mr-20'>
-      <LogoSVG />
+      <LogoSVG text='#181727' icon='#5F51FF' />
     </Link>
   )
 }
