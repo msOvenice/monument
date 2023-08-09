@@ -1,0 +1,27 @@
+.stroke {
+  @apply pt-[114px] justify-start;
+
+  .home {
+    @apply mr-1;
+  }
+
+  .main {
+    @apply font-serif text-grey-300;
+  }
+
+  a {
+    @apply mt-[6px];
+  }
+
+  .arrow {
+    @apply mx-4;
+  }
+
+  .active {
+    @apply flex font-serif;
+  }
+
+  .passive {
+    @apply flex font-serif text-grey-300;
+  }
+}

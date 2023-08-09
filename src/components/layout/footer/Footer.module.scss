@@ -1,0 +1,23 @@
+.footer {
+  @apply rounded-t-[56px] bg-black pt-14 pb-7 relative z-20 text-white;
+
+  .bg {
+    @apply absolute bottom-0 left-0 -z-10;
+  }
+
+  .content {
+    @apply mb-28;
+
+    & > div {
+      @apply flex flex-col items-start;
+
+      a {
+        @apply font-serif mb-6;
+      }
+
+      h2 {
+        @apply text-2xl leading-7 mb-6;
+      }
+    }
+  }
+}

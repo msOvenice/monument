@@ -1,0 +1,11 @@
+.block {
+  @apply rounded-3xl bg-grey-900 pr-11;
+
+  > div {
+    @apply rounded-3xl max-w-[140px] w-full bg-primary h-[150px] mr-5 flex items-center text-center justify-center;
+
+    p {
+      @apply font-mono text-lg uppercase px-1;
+    }
+  }
+}

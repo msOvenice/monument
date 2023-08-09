@@ -1,0 +1,11 @@
+.form {
+  @apply w-[436px] flex justify-between items-start;
+  
+  input {
+    @apply bg-grey-100 max-w-[309px] w-full rounded-lg py-2 px-4 mb-6;
+  }
+
+  button {
+    @apply max-w-[120px];
+  }
+}

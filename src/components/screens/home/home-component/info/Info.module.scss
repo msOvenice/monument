@@ -1,0 +1,40 @@
+.info {
+  @apply bg-black rounded-[56px] py-16 px-[76px] text-white;
+
+  .title {
+    @apply uppercase text-4xl mb-12;
+  }
+
+  .qrBlock {
+    @apply flex flex-col mb-14;
+
+    > div {
+      @apply h-52 border-l border-white flex flex-col justify-end pl-[18px] self-center max-w-[386px];
+      
+      &:first-child {
+        @apply self-start;
+      }
+
+      &:nth-child(2) {
+        @apply -ml-[4%]
+      }
+
+      &:not(:first-child) {
+        @apply -mt-[7%];
+      }
+
+      &:last-child {
+        @apply self-end max-w-[426px];
+      }
+        > p{
+        &:first-child {
+          @apply font-mono text-5xl;
+        }
+
+        &:last-child {
+          @apply text-2xl;
+        }
+      }
+    }
+  }
+}

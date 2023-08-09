@@ -1,0 +1,43 @@
+@import './variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply box-border text-black bg-white font-sans;
+}
+
+h1, h2, h3 {
+  @apply font-serif;
+}
+
+.subtitle {
+  @apply font-mono text-6xl mt-[100px] mb-14 uppercase leading-[110.4px];
+}
+
+.smallTitle {
+  @apply font-mono text-3xl mb-4 leading-[120%];
+}
+
+.customTitle {
+  @apply font-mono text-3xl leading-[120%] mb-14 relative z-10 w-fit;
+
+  &::after {
+    content: '';
+		@apply absolute left-11 -bottom-2 h-7 w-[90%] bg-primary-light -z-10 rounded-lg;
+  }
+}
+
+.slick-track {
+  display: flex;
+  grid-column-gap: 32px;
+}
+
+.slick-slider {
+  max-width: 930px;
+}
+
+.ScrollbarsCustom-Thumb {
+  background-color: $primary !important;
+}

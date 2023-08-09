@@ -1,0 +1,19 @@
+.card {
+  @apply relative mb-16;
+
+  img {
+    @apply rounded-3xl;
+  }
+
+  .block {
+    @apply max-w-[280px] absolute -bottom-16 left-0 w-full rounded-3xl bg-black py-5 px-2 text-center;
+
+    a {
+      @apply font-serif mb-[10px] text-xl text-white;
+
+      & + div {
+        @apply mt-[10px];
+      }
+    }
+  }
+}

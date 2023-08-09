@@ -1,0 +1,34 @@
+.main {
+  @apply pb-24 pt-28;
+  &Header {
+    @apply bg-primary-light rounded-[32px] h-[666px] px-10 py-20 flex flex-col justify-between relative z-20 text-white mb-[101px];
+    > img {
+      @apply absolute top-10 left-0 -z-10;
+    }
+    h1 {
+      @apply text-7xl leading-[134.4px] uppercase;
+    }
+    button {
+      @apply font-serif p-6 w-52 bg-black rounded-2xl text-2.5xl text-left uppercase;
+    }
+    p {
+      @apply text-2xl max-w-[37rem] uppercase;
+    }
+  }
+
+  .pageMemory {
+    @apply text-white p-6 mr-10 max-w-sm bg-black rounded-2xl;
+    h3 {
+      @apply mb-4 text-3xl leading-[120%];
+    }
+    p {
+      @apply mb-6 self-stretch text-[17px];
+    }
+    & + div {
+      @apply bg-grey-100 rounded-2xl pt-8 pb-12 px-[18px];
+      h3 {
+        @apply mb-8 text-2xl uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.first {
+  @apply leading-6 rounded-2xl bg-primary-darker px-1 py-2 mr-[6px] min-w-[150px] w-min text-white;
+}
+
+.text {
+  @apply w-min whitespace-nowrap;
+}
+
+.default {
+  @apply flex items-center bg-grey-100 min-w-[73px] w-min rounded-2xl p-2;
+
+  .text {
+    @apply ml-1;
+  }
+}

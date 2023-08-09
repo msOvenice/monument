@@ -1,0 +1,11 @@
+.content {
+  @apply pb-20;
+
+  .pages {
+    @apply mb-10;
+  }
+
+  button {
+    @apply block max-w-[280px] mx-auto;
+  }
+}

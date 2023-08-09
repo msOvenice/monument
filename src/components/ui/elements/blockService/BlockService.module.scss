@@ -1,0 +1,36 @@
+.main {
+  @apply w-full min-h-[155px] rounded-[32px] bg-black text-white pr-6;
+  > div:first-child {
+    @apply flex items-center;
+    .mainBlock {
+      @apply rounded-3xl bg-primary flex flex-col items-center max-w-[264px] w-full h-40 justify-center mr-6;
+    }
+    h3 {
+      @apply font-mono mt-4 text-xl leading-6 uppercase;
+    }
+    .service {
+      @apply max-w-2xl;
+      > p {
+        @apply text-xl mb-6;
+      }
+      > ul {
+        @apply pl-5;
+        > .items {
+          @apply gap-x-6 ;
+        }
+        li {
+          @apply list-disc;
+        }
+      }
+    }
+  }
+}
+.price {
+  @apply max-w-[257px] w-full;
+  > p {
+    @apply font-mono text-3xl mb-4;
+  }
+  > button {
+    @apply w-full;
+  }
+}

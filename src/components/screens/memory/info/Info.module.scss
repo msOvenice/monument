@@ -1,0 +1,19 @@
+.info {
+  @apply pt-10 pb-[104px];
+
+  .photo {
+    @apply flex-col max-w-[392px] mr-14;
+
+    img {
+      @apply rounded-2xl mb-8;
+    }
+
+    button {
+      @apply flex justify-center leading-6 pt-3 gap-x-2;
+
+      &:nth-child(2) {
+        @apply mb-4;
+      }
+    }
+  }
+}

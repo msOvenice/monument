@@ -1,0 +1,11 @@
+.form {
+  @apply max-w-lg w-full;
+  
+  input, textarea {
+    @apply bg-grey-100 w-full rounded-lg py-2 px-4 mb-6;
+ }
+
+ textarea {
+  @apply resize-none;
+ }
+}

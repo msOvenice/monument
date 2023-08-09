@@ -1,0 +1,45 @@
+.news {
+  @apply py-16;
+
+  &TitleBlock {
+    @apply mb-14;
+
+    h2 {
+      @apply my-0;
+    }
+
+    > div {
+      @apply max-w-lg flex flex-col justify-between h-full min-h-[177px];
+
+      p {
+        @apply text-2xl font-medium leading-9 tracking-[-1.2px] mb-auto;
+      }
+
+      button {
+        @apply mt-auto;
+      }
+    }
+  }
+
+  &Last {
+    @apply rounded-2xl px-6 py-8 bg-primary text-white mb-14;
+
+    p {
+      @apply text-lg leading-7;
+    }
+    p:first-child {
+      @apply mb-3;
+    }
+    p:last-child {
+      @apply mt-6;
+    }
+
+    a {
+      @apply mb-6 text-3xl font-serif;
+    }
+
+    & + div {
+      @apply gap-14;
+    }
+  }
+}

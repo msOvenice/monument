@@ -1,0 +1,14 @@
+.section {
+  @apply pb-2;
+
+  .buttons {
+    @apply mt-14 justify-center gap-x-6;
+
+    button:first-child {
+      @apply max-w-[280px];
+    }
+    button:last-child {
+      @apply max-w-[320px];
+    }
+  }
+}

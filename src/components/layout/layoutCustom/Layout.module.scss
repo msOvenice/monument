@@ -1,0 +1,30 @@
+.layout {
+  @apply pb-20;
+
+  .content {
+    @apply gap-14;
+  }
+
+  .control {
+    @apply flex justify-center mt-11;
+
+    &Icon {
+      @apply mx-6;
+    }
+
+    &Page {
+      @apply text-base leading-6 py-2 px-[14px] w-9 rounded-full mx-1;
+
+      &Active {
+        @apply bg-primary text-white;
+      }
+      &Passive {
+        @apply bg-white;
+      }
+    }
+  }
+
+  .btn {
+    @apply ml-4;
+  }
+}

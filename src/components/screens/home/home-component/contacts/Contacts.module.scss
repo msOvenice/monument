@@ -1,0 +1,9 @@
+.contacts {
+  @apply pt-4 pb-[108px];
+  h2 {
+    @apply mt-0 mb-6;
+  }
+  .description {
+    @apply text-lg leading-7 mb-12;
+  }
+}

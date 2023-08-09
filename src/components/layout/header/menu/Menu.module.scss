@@ -1,0 +1,24 @@
+.menu {
+	@apply flex items-center gap-6 font-thin;
+
+	> nav {
+		@apply mx-auto;
+		> ul {
+			@apply flex items-center gap-6 list-none;
+			> li {
+				> a {
+					@apply relative tracking-widest no-underline text-black;
+
+					&::after {
+						content: '';
+						@apply absolute left-0 -bottom-3 h-1 w-0 bg-grey-900 transition-all duration-300;
+					}
+
+					&:hover::after {
+						@apply w-1 ml-[50%];
+					}
+				}
+			}
+		}
+	}
+}

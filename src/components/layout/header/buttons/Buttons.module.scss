@@ -1,0 +1,7 @@
+.content {
+  @apply gap-4 font-sans font-normal;
+
+  button:first-child {
+    @apply p-2 mr-4;
+  }
+}

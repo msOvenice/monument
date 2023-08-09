@@ -1,0 +1,7 @@
+.data {
+  @apply flex justify-between flex-col h-[412px] mr-14;
+
+  p {
+    @apply text-3xl leading-[120%] font-medium max-w-[280px] mb-auto;
+  }
+}

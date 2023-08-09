@@ -1,0 +1,19 @@
+.content {
+  @apply flex-col items-start;
+
+  h2 + div {
+    @apply gap-x-5 mb-8;
+
+    > div {
+      @apply px-2;
+    }
+  }
+
+  .contacts {
+    @apply w-full gap-x-4 mb-6;
+  }
+
+  .description {
+    @apply text-lg font-medium leading-7;
+  }
+}
