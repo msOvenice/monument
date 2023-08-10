@@ -11,13 +11,13 @@ const HeaderMain:FC = () => {
       <Wrapper className={styles.mainHeader}>
         <Image src={'/subtract.svg'} width={1288} height={626} alt='substract' />
         <h1>Кращий спосіб зберегти спогади</h1>
-        <Row isGrid={false}>
+        <Row>
           <button>Дізнатись більше</button>
           <p>СТВОРІТЬ СТОРІНКУ ПАМ'ЯТІ ВАШОГО РІДНОГО. ЗБЕРЕЖІТЬ ІСТОРІЮ ВАШОЇ РОДИНИ ПРЯМО ЗАРАЗ.</p>
         </Row>
       </Wrapper>
       <Wrapper>
-        <Row isGrid={false}>
+        <Row>
           <div className={styles.pageMemory}>
             <h3>Що таке “Сторінка пам’яті”?</h3>
             <p>Це інтерактивна сторінка в мережі, на якій ви зможете залишити спогади та історію про близьку людину.</p>

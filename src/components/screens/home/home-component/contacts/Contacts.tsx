@@ -8,7 +8,7 @@ import styles from './Contacts.module.scss'
 const Contacts: FC = () => {
   return (
     <Wrapper className={styles.contacts}>
-      <Row isGrid={false}>
+      <Row>
         <div>
           <h2 className='subtitle'>Контакти</h2>
           <p className={styles.description}>Якщо ви маєте питання щодо покупки послуги -<br/>зателефонуйте нам</p>

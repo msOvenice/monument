@@ -4,10 +4,10 @@ import Row from '@/components/ui/Row'
 import Wrapper from '@/components/ui/Wrapper'
 import SocialItems from '@/components/ui/elements/SocialItems'
 import Form from '@/components/ui/elements/formSmall/Form'
-import LogoSVG from '@/img/Logo'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
+import LogoSVG from '../../../../img/assets/Logo'
 import styles from './Footer.module.scss'
 
 const dataFirst = [

@@ -23,9 +23,9 @@ const Services:FC = () => {
         : null
       }
       
-      <Row isGrid={false} className={styles.buttons}>
+      <Row className={styles.buttons}>
         <Button>Показати усі пакети</Button>
-        <Button custom={true}>Скористатись безкоштовним</Button>
+        <Button custom>Скористатись безкоштовним</Button>
       </Row>
     </Wrapper>
   )

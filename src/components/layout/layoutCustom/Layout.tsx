@@ -45,10 +45,10 @@ const Layout:FC<ILayout> = ({ data, path }) => {
   return (
     <Wrapper className={styles.layout}>
       <Header path={path} />
-      <Row isGrid={true} className={styles.content}>
+      <Row isGrid className={styles.content}>
         {
           paginatedData.map((item) => (
-            <Column isCenter={true} size={3} key={item.id}>
+            <Column isCenter size={3} key={item.id}>
               <Card data={item} flag={pathname} />
             </Column>
           ))

@@ -1,6 +1,6 @@
-import LogoSVG from '@/img/Logo'
 import Link from 'next/link'
 import { FC } from 'react'
+import LogoSVG from '../../../../img/assets/Logo'
 
 const Logo: FC = () => {
   return (

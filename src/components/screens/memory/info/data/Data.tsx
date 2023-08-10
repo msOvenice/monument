@@ -8,19 +8,19 @@ import styles from './Data.module.scss'
 
 const Data:FC<IHumanData> = ({ data }) => {
   return (
-    <Column isCenter={false} size={8} className={styles.content}>
+    <Column size={8} className={styles.content}>
       <h2 className='smallTitle'>{data.title}</h2>
       <Tags data={data.data} />
-      <Row isGrid={true} className={styles.contacts}>
+      <Row isGrid className={styles.contacts}>
         {data.info.slice(0,3).map((item, index) => 
-          <Column size={4} isCenter={false}>
+          <Column size={4}>
             <ContactDetails data={item} key={index} />
           </Column>
         )}
       </Row>
-      <Row isGrid={true} className={styles.contacts}>
+      <Row isGrid className={styles.contacts}>
         {data.info.slice(3,5).map((item, index) => 
-          <Column size={6} isCenter={false}>
+          <Column size={6}>
             <ContactDetails data={item} key={index} />
           </Column>
         )}

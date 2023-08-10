@@ -16,7 +16,7 @@ const Card: FC<CardData> = ({ data, flag }) => {
       <Image src={data.images} width={280} height={291} alt={data.title} />
       <div className={styles.block}>
         <Link href={`${flag}/${data.id}`}>{data.title}</Link>
-        <Tags data={data.data} card={true} />
+        <Tags data={data.data} card />
       </div>
     </div>
   );

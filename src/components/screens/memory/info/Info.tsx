@@ -16,14 +16,14 @@ export interface IHumanData {
 const Info:FC<IHumanData> = ({ data }) => {
   return (
     <section className={styles.info}>
-      <Row isGrid={true}>
-        <Column isCenter={false} size={4} className={styles.photo}>
+      <Row isGrid>
+        <Column size={4} className={styles.photo}>
           <Image src={data.images} alt={data.title} width={392} height={392} />
           <Button>
             <MdOutlineQrCode size={22} color='#fff'  />
             QR-код
           </Button>
-          <Button custom={true}>
+          <Button custom>
             <FiShare size={22} color='#000'  />
             Поширити
           </Button>

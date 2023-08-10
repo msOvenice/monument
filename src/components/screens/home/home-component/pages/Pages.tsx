@@ -9,7 +9,7 @@ const Pages:FC = () => {
   return (
     <Wrapper>
       <h2 className='subtitle'>Сторінки пам'яті</h2>
-      <Row isGrid={false}>
+      <Row>
         <div className={styles.data}>
           <p>Переглядайте сторінки пам’яті наших користувачів</p>
           <Button>Дивитись усі</Button>

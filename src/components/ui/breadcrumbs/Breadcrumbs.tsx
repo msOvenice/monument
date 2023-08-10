@@ -13,7 +13,7 @@ const Breadcrumbs: FC<Path> = ({ path }) => {
   const pathSegments = currentPath.split('/').filter((segment) => segment !== '');
 
   return (
-    <Row isGrid={false} className={styles.stroke}>
+    <Row className={styles.stroke}>
       <RiHomeFill color='#BFBFBF' size={24} className={styles.home} />
       <Link href={'/'} className={styles.main}>
         Головна

@@ -2,6 +2,14 @@
   @apply leading-6 rounded-2xl bg-primary-darker px-1 py-2 mr-[6px] min-w-[150px] w-min text-white;
 }
 
+.card {
+  @apply leading-6 rounded-2xl bg-primary-darker px-1 py-2 mr-[6px] text-white w-full max-w-[183px];
+
+  p {
+    @apply overflow-hidden whitespace-nowrap overflow-ellipsis w-full;
+  }
+}
+
 .text {
   @apply w-min whitespace-nowrap;
 }

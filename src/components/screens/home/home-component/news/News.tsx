@@ -24,7 +24,7 @@ const News:FC = () => {
   
   return (
     <Wrapper className={styles.news}>
-      <Row isGrid={false} className={styles.newsTitleBlock}>
+      <Row className={styles.newsTitleBlock}>
         <h2 className='subtitle'>Новини для вас</h2>
         <div>
           <p>Читайте останні новини, оновлення та дізнавайтесь про нові події на PastQR</p>
@@ -37,7 +37,7 @@ const News:FC = () => {
           <Link href={'/'}>{lastElement.title}</Link>
           <p>{lastElement.description}</p>
         </div>
-        <Row isGrid={true}>
+        <Row isGrid>
           {restElements.map((item, index) => (
             <BlockNews item={item} key={index} />
           ))}

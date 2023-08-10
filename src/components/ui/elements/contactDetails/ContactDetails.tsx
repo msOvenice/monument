@@ -19,8 +19,8 @@ const ContactDetails:FC<IDetails> = ({ data, awards }) => {
       <p>
         {awards ?
           awards.map((item, index) => 
-            <Row isGrid={true}>
-              <Column isCenter={true} size={12 / awards.length}>
+            <Row isGrid>
+              <Column isCenter size={12 / awards.length}>
                 {
                   item.image ?
                     <Image alt={item.title} src='' width={72} height={72} />

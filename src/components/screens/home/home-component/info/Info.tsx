@@ -26,7 +26,7 @@ const Info:FC = () => {
               )}
             </div>
             <h3 className={style.title}>ЩО МОЖНА ЗБЕРЕГТИ НА СТОРІНЦІ ПАМ'ЯТІ?<br/>ДІЛИТИСЯ СПОГАДАМИ ПРОСТО</h3>
-            <Row isGrid={true} className='gap-10'>
+            <Row isGrid className='gap-10'>
               {data.services.map((service, index) => 
                 <BlockMemory service={service} key={index} />
               )}

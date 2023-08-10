@@ -9,7 +9,7 @@ interface Memory {
 
 const BlockMemory:FC<Memory> = ({ service }) => {
   return (
-    <Column isCenter={false} size={4} className={styles.block}>
+    <Column size={4} className={styles.block}>
       <div>
         <p>{service.title}</p>
       </div>

@@ -13,14 +13,16 @@ interface IBlockNews {
 
 const BlockNews:FC<IBlockNews> = ({ item }) => {
   return (
-    <Column size={4} isCenter={false} className={styles.block}>
-      <Row isGrid={false}>
+    <Column size={4} className={styles.block}>
+      <Row>
         <p>{item.data}</p>
-        <Tag category={true}>{item.category}</Tag>
+        <Tag category>{item.category}</Tag>
       </Row>
-      <Link href={'/'} className='mb-6 text-3xl font-serif leading-[38.4px]'>{item.title}</Link>
-      <p className='leading-7 text-[17px] mb-6'>{item.description}</p>
-      <Link href={'/'} className='mr-auto'><FiArrowRight size={48} color='#5F51FF' /></Link>
+      <Link href={'/'} className={styles.title}>{item.title}</Link>
+      <p>{item.description}</p>
+      <Link href={'/'}>
+        <FiArrowRight size={48} color='#5F51FF' />
+      </Link>
     </Column>
   )
 }

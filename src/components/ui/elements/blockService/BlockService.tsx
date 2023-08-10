@@ -20,7 +20,7 @@ const BlockService:FC<Services> = ({ data }) => {
   const altText = data.image?.match(/\/([^/]+)\.\w+$/)?.[1] ?? 'Default Alt Text';
 
   return (
-    <Row isGrid={false} className={style.main}>
+    <Row className={style.main}>
       <div>
         <div className={style.mainBlock}>
           <Image 
@@ -34,9 +34,9 @@ const BlockService:FC<Services> = ({ data }) => {
         <div className={style.service}>
           <p>Все, що є в короткій сторінці, плюс:</p>
           <ul>
-            <Row isGrid={true} className={style.items}>
+            <Row isGrid className={style.items}>
               {data.services.map((service, index) => (
-                <Column isCenter={false} size={4} key={index} className='!items-start'>
+                <Column size={4} key={index} className='!items-start'>
                   <li>{service}</li>
                 </Column>
               )

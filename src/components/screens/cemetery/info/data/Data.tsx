@@ -11,7 +11,7 @@ const Data:FC<ICemeteryData> = ({ data }) => {
     <Column isCenter={false} size={8} className={styles.content}>
       <h2 className='smallTitle'>{data.title}</h2>
       <Tags data={data.data} />
-      <Row isGrid={false} className={styles.contacts}>
+      <Row className={styles.contacts}>
         {data.info.map((item, index) => 
           <ContactDetails data={item} key={index} />
         )}

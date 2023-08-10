@@ -12,12 +12,12 @@ const Tags:FC<IData> = ({ data, card }) => {
   const itemsToMap = card ? data.slice(0, 2) : data
 
   return (
-    <Row isGrid={false}>
+    <Row>
         {itemsToMap.map((item, index) =>
           index == 0 ?
-            <TagBig first={true} data={item} key={index} />
+            <TagBig first card={card} data={item} key={index} />
           : 
-            <TagBig data={item} key={index} />
+            <TagBig card={card} data={item} key={index} />
         )}
       </Row>
   )

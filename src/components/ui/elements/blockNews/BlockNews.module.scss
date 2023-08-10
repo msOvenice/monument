@@ -4,4 +4,16 @@
   > div {
     @apply w-full mb-4;
   }
+
+  .title {
+    @apply mb-6 text-3xl font-serif leading-[38.4px];
+
+    & + p {
+      @apply leading-7 text-[17px] mb-6;
+    }
+  }
+
+  a:last-child {
+    @apply mr-auto;
+  }
 }

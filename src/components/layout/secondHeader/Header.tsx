@@ -23,7 +23,7 @@ const Header:FC<IHeader> = ({ path }) => {
             <FaFilter size={22} color='#fff' className={styles.icon} />
             Фільтр
           </Button>
-          <Button custom={true}>
+          <Button custom>
             <RiRoadMapFill size={22} color='#000' className={styles.icon} />
             Карта
           </Button>

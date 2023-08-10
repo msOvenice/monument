@@ -10,10 +10,10 @@ const PagesMemory:FC<{people: IHuman[]}> = ({ people }) => {
   return (
     <section className={styles.content}>
       <h3 className='customTitle'>Сторінки пам'яті</h3>
-      <Row isGrid={true} className={styles.pages}>
+      <Row isGrid className={styles.pages}>
         {
           people.slice(0, 4).map((item) => (
-            <Column isCenter={true} size={3} key={item.id}>
+            <Column isCenter size={3} key={item.id}>
               <Card data={item} flag='/memories' />
             </Column>
           ))
