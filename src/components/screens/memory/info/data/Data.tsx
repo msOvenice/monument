@@ -9,7 +9,7 @@ import styles from './Data.module.scss'
 const Data:FC<IHumanData> = ({ data }) => {
   return (
     <Column size={8} className={styles.content}>
-      <h2 className='smallTitle'>{data.title}</h2>
+      <h2 className='smallTitle'>{data.name}</h2>
       <Tags data={data.data} />
       <Row isGrid className={styles.contacts}>
         {data.info.slice(0,3).map((item, index) => 
