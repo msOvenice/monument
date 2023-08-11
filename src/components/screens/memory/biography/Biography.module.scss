@@ -1,0 +1,57 @@
+.biography {
+  @apply flex flex-col gap-y-20;
+
+  > div {
+    @apply items-start;
+  }
+  
+  .textBlock {
+    @apply flex flex-col gap-y-[52px];
+  }
+
+  .test {
+    @apply relative;
+
+    .smallPhoto {
+      @apply flex flex-col justify-between h-full flex-grow;
+      
+      .img {
+        @apply max-w-[279px] absolute bottom-0;
+      }
+    }
+  }
+
+  .columnContainer {
+    @apply columns-2 gap-x-14;
+
+    p {
+      @apply float-left w-full m-0 leading-6;
+    }
+    
+  }
+
+  h3 {
+    @apply font-serif;
+  }
+
+  p {
+    @apply max-w-[728px];
+  }
+
+  .photos {
+    @apply gap-x-14;
+  }
+
+  .img {
+    @apply flex-col items-start;
+
+    img {
+      @apply rounded-2xl;
+    }
+
+    p {
+      @apply mt-4 leading-6 text-grey-700;
+    }
+  }
+    
+}

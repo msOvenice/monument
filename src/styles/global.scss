@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 .customTitle {
-  @apply font-mono text-3xl leading-[120%] mb-14 relative z-10 w-fit;
+  @apply font-mono text-3xl leading-[120%] mb-14 mr-10 relative z-10 w-fit;
 
   &::after {
     content: '';

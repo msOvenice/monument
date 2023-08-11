@@ -46,10 +46,45 @@ export interface IHuman {
   title: string,
   images: string,
   data: TData[],
-  info: TInfo[],
   cemetary: string,
-  awards?: TAward[]
 };
+
+export type TLink = {
+  url: string,
+  description: string
+}
+
+export interface IDetailHuman {
+  id: number,
+  name: string,
+  image: string,
+  data: TData[],
+  info: TInfo[],
+  awards?: TAward[],
+  quote?: string,
+  photos: string[],
+  quoteFamily: TQuotesFamily[],
+  address: TInfo[],
+  links: TLink[],
+  biography: string,
+  test1?: {
+    text: string,
+    photos: TLink[],
+  },
+  test2?: {
+    text: string,
+    photo: TLink
+  },
+  test3?: {
+    text: string,
+    photo: TLink
+  }
+}
+
+export type TQuotesFamily = {
+  name: string,
+  quote: string
+}
 
 export type TAward = {
   image?: string,

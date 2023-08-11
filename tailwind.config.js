@@ -5,6 +5,7 @@ const constants = {
   black: '#181727',
   'grey-100': '#F2F2F2',
   'grey-300': '#BFBFBF',
+  'grey-700': '#727272',
   'grey-900': '#2C2947',
   primary: '#5F51FF',
   'primary-darker': '#0B0085',

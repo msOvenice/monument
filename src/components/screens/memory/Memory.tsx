@@ -1,20 +1,24 @@
 import Wrapper from '@/components/ui/Wrapper'
 import Breadcrumbs from '@/components/ui/breadcrumbs/Breadcrumbs'
-import { IHuman } from '@/utils/tests.data'
+import { IDetailHuman } from '@/utils/tests.data'
 import { FC } from 'react'
+import Biography from './biography/Biography'
 import Info from './info/Info'
 
 interface IHumanData {
-  data: IHuman | undefined
+  data: IDetailHuman | undefined
 }
 
 const Memory:FC<IHumanData> = ({ data }) => {
   return (
     data ? (
-      <Wrapper>
-        <Breadcrumbs path={['Спогади', data.title]} />
-        <Info data={data} />
-      </Wrapper>
+      <>
+        <Wrapper>
+          <Breadcrumbs path={['Спогади', data.name]} />
+          <Info data={data} />
+        </Wrapper>
+        <Biography data={data} />
+      </>
     ) : (
       <p>Loading...</p>
     )

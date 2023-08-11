@@ -1,0 +1,12 @@
+.quote {
+  @apply bg-primary px-8 py-10 rounded-2xl w-full font-serif text-xl text-white relative;
+
+  span {
+    @apply flex absolute left-8 -top-12;
+
+    > svg:last-child {
+      @apply -ml-10;
+    }
+  }
+
+}

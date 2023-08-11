@@ -1,5 +1,5 @@
 import mockFetch from '@/utils/mocks'
-import { IHuman, IInfo, INews, IService, TCemetery, TContact, TSocial, TUser } from '@/utils/tests.data'
+import { IDetailHuman, IHuman, IInfo, INews, IService, TCemetery, TContact, TSocial, TUser } from '@/utils/tests.data'
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
 export const userApi = createApi({
@@ -18,6 +18,9 @@ export const userApi = createApi({
     }),
     getPeople: builder.query<IHuman[], null>({
       query: () => "people",
+    }),
+    getHumanDetails: builder.query<IDetailHuman[], null>({
+      query: () => "human",
     }),
     getInfoServicesData: builder.query<IInfo, null>({
       query: () => "info",
@@ -40,4 +43,4 @@ export const userApi = createApi({
   }),
 });
 
-export const { useGetCemeteryQuery, useGetCemeteryInfoQuery, useGetPeopleQuery, useGetUserByIdQuery, useGetServicesQuery, useGetNewsQuery, useGetContactsQuery, useGetSocialQuery, useGetInfoServicesDataQuery } = userApi;
+export const { useGetCemeteryQuery, useGetCemeteryInfoQuery, useGetHumanDetailsQuery, useGetPeopleQuery, useGetUserByIdQuery, useGetServicesQuery, useGetNewsQuery, useGetContactsQuery, useGetSocialQuery, useGetInfoServicesDataQuery } = userApi;
